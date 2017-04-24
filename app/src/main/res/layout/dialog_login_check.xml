@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_white_radio_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30">
+
+        <ImageView
+            android:id="@+id/dialog_login_check_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/back_color" />
+
+        <TextView
+            android:id="@+id/dialog_login_check_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@id/dialog_login_check_back"
+            android:text="登录"
+            android:textColor="@color/guestPaint_color_wrong"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/guestPaint_color_wrong"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dialog_login_check_f" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:text="手机号码"
+            android:textColor="@color/et_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dialog_login_check_mobile"
+            style="@style/Edittext_reg"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/et_text_color"
+            android:textColorHint="@color/et_hint_color"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="验证码"
+            android:textColor="@color/et_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dialog_login_check_code"
+            style="@style/Edittext_reg"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/et_text_color"
+            android:textColorHint="@color/et_hint_color" />
+
+        <View
+            style="@style/Line_s"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5" />
+
+        <Button
+            android:id="@+id/btn_get_identifying_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/no_color"
+            android:text="获取验证码"
+            android:textColor="@color/text_color_blue" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="邀请码"
+            android:textColor="@color/et_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dialog_login_check_reinvite_code"
+            style="@style/Edittext_reg"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:hint="请输入邀请码(非必填)"
+            android:textColor="@color/et_text_color"
+            android:textColorHint="@color/et_hint_color" />
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10" />
+
+    <Button
+        android:id="@+id/dialog_login_check_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/reg_bottom"
+        android:text="@string/next"
+        android:textColor="@color/guestPaint_color_wrong" />
+</LinearLayout>

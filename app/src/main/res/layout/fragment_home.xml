@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_fragment_bg"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp15">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_toolbar_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/toolbar_iv_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:src="@drawable/menu" />
+
+                    <tomcat360.com.hyxfjr.view.myview.CircleImageView
+                        android:id="@+id/toolbar_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/toolbar_iv_menu"
+                        android:src="@drawable/icon_gray"
+                        app:border_color="@color/no_color" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/toolbar_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:src="@drawable/share_" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/perfect_info"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/home_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_title_1"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/_500"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/home_btn_center"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp2"
+                android:background="@drawable/home_btn_bg"
+                android:text="登录/注册"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_marginTop="@dimen/dp4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="本月应还"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/home_can_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:text="960.00元"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/l_dashed" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="可用额度"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/my_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:text="50000.00元"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/l_dashed" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="我的额度"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/daily_interst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:text="50000.00元"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_bg"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp70"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5">
+
+                        <ImageView
+                            android:id="@+id/home_center_content_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/viewpager_bg" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/home_item_application_promotion"
+                                style="@style/CardView_home_item">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/home_item_bg_color"
+                                    android:paddingLeft="@dimen/dp3"
+                                    android:paddingTop="@dimen/dp3">
+
+                                    <TextView
+                                        android:id="@+id/application_promotion"
+                                        style="@style/Text_home_item_title"
+                                        android:text="申请额度" />
+
+                                    <TextView
+                                        style="@style/Text_home_item_content"
+                                        android:layout_below="@id/application_promotion"
+                                        android:text="立即提升额度" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@drawable/home_item_icon_b" />
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/home_item_quick_repayment"
+                                style="@style/CardView_home_item">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/home_item_bg_color"
+                                    android:paddingLeft="@dimen/dp3"
+                                    android:paddingTop="@dimen/dp5">
+
+                                    <TextView
+                                        android:id="@+id/quick_repayment"
+                                        style="@style/Text_home_item_title"
+                                        android:text="快速还款" />
+
+                                    <TextView
+                                        style="@style/Text_home_item_content"
+                                        android:layout_below="@id/quick_repayment"
+                                        android:text="便捷还款通道" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@drawable/home_item_icon_c" />
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/home_item_preferential_activities"
+                                style="@style/CardView_home_item">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/home_item_bg_color"
+                                    android:paddingLeft="@dimen/dp3"
+                                    android:paddingTop="@dimen/dp3">
+
+                                    <TextView
+                                        android:id="@+id/preferential_activities"
+                                        style="@style/Text_home_item_title"
+                                        android:text="优惠活动" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@drawable/home_item_icon_a" />
+
+                                    <TextView
+                                        style="@style/Text_home_item_content"
+                                        android:layout_below="@id/preferential_activities"
+                                        android:text="优惠活动好多" />
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/home_item_contract_network"
+                                style="@style/CardView_home_item">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/home_item_bg_color"
+                                    android:paddingLeft="@dimen/dp3"
+                                    android:paddingTop="@dimen/dp3">
+
+                                    <TextView
+                                        android:id="@+id/contract_network"
+                                        style="@style/Text_home_item_title"
+                                        android:text="签约网点" />
+
+                                    <TextView
+                                        style="@style/Text_home_item_content"
+                                        android:layout_below="@id/contract_network"
+                                        android:text="查找附近网点" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/home_item_icon_d" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

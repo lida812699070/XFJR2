@@ -1,0 +1,71 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <style name="ActivityWithoutTitleTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="GuideDot">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">15.0dip</item>
+        <item name="android:src">@drawable/dot</item>
+    </style>
+
+
+
+
+    <!-- 标详情进度条 -->
+    <style name="Detail_LoanProgress" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/detail_loan_progress</item>
+        <item name="android:minHeight">17dip</item>
+        <item name="android:maxHeight">17dip</item>
+        <item name="android:minWidth">80dip</item>
+        <item name="android:maxWidth">120dip</item>
+    </style>
+
+    <style name="CommonTableHeader">
+        <item name="android:textColor">#777777</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#f7f7f7</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="selfsmilerdHeader">
+        <item name="android:textColor">#604113</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#f7f7f7</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CommonTableItem">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyHongBaoItem">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+    -->
+    <style name="Text">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

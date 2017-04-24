@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp10">
+
+                <RelativeLayout
+                    android:id="@+id/setting_head_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5">
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/text_setting_title"
+                        android:text="头像" />
+
+                    <ImageView
+                        android:id="@+id/setting_head_right_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:src="@drawable/right" />
+
+                    <tomcat360.com.hyxfjr.view.myview.CircleImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:layout_toLeftOf="@id/setting_head_right_iv"
+                        android:padding="@dimen/dp5"
+                        android:src="@drawable/head_icon_default"
+                        app:border_color="@color/transparent"
+                        app:border_width="0px" />
+                </RelativeLayout>
+
+                <View style="@style/Line" />
+
+                <RelativeLayout
+                    android:id="@+id/setting_mobile_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/text_setting_title"
+                        android:text="手机号" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:src="@drawable/right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="@dimen/dp5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp10">
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/reset_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="修改密码" />
+
+                <View style="@style/Line" />
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/reset_gesture_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="手势密码" />
+
+                <View style="@style/Line" />
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/bank_card_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="银行卡管理" />
+
+                <View style="@style/Line" />
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/shipping_address_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="收货地址管理" />
+            </LinearLayout>
+
+            <View style="@style/Line" />
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="@dimen/dp5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp10">
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/follow_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="关注微信" />
+
+                <View style="@style/Line" />
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="关于我们" />
+
+                <View style="@style/Line" />
+
+                <RelativeLayout
+                    android:id="@+id/setting_clear_cache_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_setting_title"
+                        android:text="清理缓存" />
+
+                    <ImageView
+                        android:id="@+id/cache_right_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:src="@drawable/right" />
+
+                    <TextView
+                        android:id="@+id/setting_cache_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:layout_toLeftOf="@id/cache_right_iv"
+                        android:text="34.8M"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line" />
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/service_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="服务协议模板" />
+
+                <View style="@style/Line" />
+
+                <tomcat360.com.hyxfjr.view.myview.SettingItemView
+                    android:id="@+id/my_quota_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSettingItem="我的额度合同" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

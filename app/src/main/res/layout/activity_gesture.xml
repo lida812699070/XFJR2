@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/guest_switch"
+        style="@style/commonItem"
+        android:paddingLeft="0dp">
+
+        <TextView
+            style="@style/SettingItemText"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="手势密码"
+            android:textColor="@color/tcolor_b2" />
+
+        <ToggleButton
+            android:id="@+id/manage_guesture_togglebtn"
+            android:layout_width="@dimen/dp23"
+            android:layout_height="@dimen/dp13"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/toggle_bg"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:id="@+id/ll_modify_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/modify_gesture"
+            style="@style/commonItem"
+            android:paddingLeft="0dp">
+
+            <TextView
+                style="@style/SettingItemText"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="修改手势密码"
+                android:textColor="@color/tcolor_b2" />
+
+            <ImageView style="@style/right_go_btn" />
+        </LinearLayout>
+
+        <View style="@style/Line" />
+    </LinearLayout>
+</LinearLayout>

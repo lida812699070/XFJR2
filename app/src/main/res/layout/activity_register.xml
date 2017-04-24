@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="@string/reg_no_reg"
+        android:textColor="@color/top_bar_color"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/reg_mobile"
+            style="@style/Edittext_reg"
+            android:hint="@string/input_mobile"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/reg_message_check_et"
+            style="@style/Edittext_reg"
+            android:hint="@string/input_message_check"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/reg_message_check_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/shape_button_with_bg"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/reg_invite_mobile"
+            style="@style/Edittext_reg"
+            android:hint="@string/input_invite_mobile"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1" />
+
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/reg_password"
+            style="@style/Edittext_reg"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/reg_password_again"
+            style="@style/Edittext_reg"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <Button
+        android:id="@+id/reg_put_btn"
+        style="@style/Buttom_with"
+        android:text="确定" />
+</LinearLayout>

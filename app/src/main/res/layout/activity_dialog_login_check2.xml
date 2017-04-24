@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_white_radio_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/back_color" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="登录"
+            android:textColor="@color/guestPaint_color_wrong"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/guestPaint_color_wrong"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dialog_login_check_s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/password"
+            android:textColor="@color/et_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:digits="@string/pwd_dig"
+            android:id="@+id/et_password"
+            android:imeOptions="actionNext"
+            style="@style/Edittext_reg"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="@color/et_text_color"
+            android:textColorHint="@color/et_hint_color"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:text="确认密码"
+            android:textColor="@color/et_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:imeOptions="actionNext"
+            android:id="@+id/et_password_again"
+            style="@style/Edittext_reg"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:digits="@string/pwd_dig"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="@color/et_text_color"
+            android:textColorHint="@color/et_hint_color" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10" />
+
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/reg_bottom"
+        android:text="@string/finish"
+        android:textColor="@color/guestPaint_color_wrong" />
+</LinearLayout>

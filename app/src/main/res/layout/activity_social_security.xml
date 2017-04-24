@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="社保" />
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="社会保障" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:hint="请输入社保账号" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="社保密码" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:hint="请输入社保密码" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="月缴基金" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:hint="请输入社保缴纳基数" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="公积金" />
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:layout_weight="1"
+            android:text="公积金账号" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:layout_weight="2"
+            android:hint="请输入社保缴纳基数" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:layout_weight="1"
+            android:text="公积金账号" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:layout_weight="2"
+            android:hint="公积金密码" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:layout_weight="1"
+            android:text="公积金基数" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:layout_weight="2"
+            android:hint="请输入公积金缴纳基数" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="@string/_2_4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Buttom_with"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+        <View
+            style="@style/Line"
+            android:layout_above="@id/btn_save" />
+    </RelativeLayout>
+</LinearLayout>

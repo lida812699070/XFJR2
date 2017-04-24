@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_radius_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="center_horizontal"
+            android:text="识别成功"
+            android:textColor="#22DD92"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center_horizontal"
+            android:text="请点击下一步前往紧急联系人录入"
+            android:textColor="@color/et_text_color" />
+
+        <View
+            style="@style/Line"
+            android:layout_marginTop="@dimen/dp5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp8"
+            android:gravity="center_horizontal"
+            android:text="@string/next"
+            android:textColor="@color/guestPaint_color_wrong"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_faild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_radius_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="center_horizontal"
+            android:text="识别失败"
+            android:textColor="@color/red_black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center_horizontal"
+            android:text="请重新识别，严格按照识别方法"
+            android:textColor="@color/et_text_color" />
+
+        <View
+            style="@style/Line"
+            android:layout_marginTop="@dimen/dp5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp8"
+            android:gravity="center_horizontal"
+            android:text="@string/close"
+            android:textColor="@color/et_text_color"
+            android:textSize="22sp" />
+    </LinearLayout>
+</RelativeLayout>

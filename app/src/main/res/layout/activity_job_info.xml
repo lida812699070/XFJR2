@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="单位名称" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:hint="请输入您所在的单位" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="单位电话" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:hint="区号-电话-分机号" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_20sp"
+            android:layout_margin="@dimen/dp5"
+            android:text="房产位置"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/blue_triangle"
+                android:padding="@dimen/dp5"
+                android:text="浙江省 杭州市 西湖区"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入详细地址"
+                android:padding="@dimen/dp5"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="现任职位" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:hint="请输入您在单位担任的职位" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="行业类别" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:layout_gravity="center_vertical"
+            android:hint="请选择您工作所属的行业" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@drawable/et_right_icon" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="待发工资" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入您的收入(单位:元/月)" />
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_16sp"
+            android:text="单位性质" />
+
+        <EditText
+            style="@style/et_16sp"
+            android:layout_gravity="center_vertical"
+            android:hint="请选择单位性质" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@drawable/et_right_icon" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="@string/_1_2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Buttom_with"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+        <View
+            style="@style/Line"
+            android:layout_above="@id/btn_save" />
+    </RelativeLayout>
+</LinearLayout>

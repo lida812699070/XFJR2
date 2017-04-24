@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_fragment_bg"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp5">
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/setting" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <tomcat360.com.hyxfjr.view.myview.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:src="@drawable/icon_blue"
+                    app:border_color="@color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="洛奇"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:text="136****55555"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableRight="@drawable/right_white"
+                        android:text="我的资料"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_marginTop="@dimen/dp4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="本月应还"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_this_month_repayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="960.00元"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/l_dashed" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="可用额度"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_can_use_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="50000.00元"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/l_dashed" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="我的额度"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/my_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="50000.00元"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/radio_bg"
+                        android:orientation="vertical">
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_my_bill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/my_bill"
+                            app:textRight="@string/month_free"
+                            app:title="@string/my_bill" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_my_document"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/my_document"
+                            app:textRight=""
+                            app:title="@string/my_document" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_red_packet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/my_red_packet"
+                            app:textRight=""
+                            app:title="我的红包" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_payment_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/hkjl"
+                            app:textRight="3 次"
+                            app:title="@string/payment_history" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_applications_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/applications_record"
+                            app:textRight="6 次"
+                            app:title="@string/applications_record" />
+                    </LinearLayout>
+
+                    <View style="@style/Line" />
+
+                    <View
+                        style="@style/Line"
+                        android:layout_height="@dimen/dp3"
+                        android:background="@color/gray" />
+
+                    <View style="@style/Line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_share_friends"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/share_org"
+                            app:textRight=""
+                            app:title="@string/share_friends" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_invite_friends"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/invite_friends"
+                            app:textRight=""
+                            app:title="@string/invite_friends" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_my_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/my_message"
+                            app:textRight=""
+                            app:title="@string/my_message" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp28">
+
+                            <View
+                                style="@style/Line"
+                                android:layout_marginLeft="@dimen/dp10" />
+                        </LinearLayout>
+
+                        <tomcat360.com.hyxfjr.view.myview.MineItemView
+                            android:id="@+id/tv_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:image="@drawable/help"
+                            app:textRight=""
+                            app:title="@string/help" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

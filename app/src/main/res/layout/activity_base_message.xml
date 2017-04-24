@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/id_authentication_c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text_20sp"
+                android:layout_margin="@dimen/dp5"
+                android:text="居住地址"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_live_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/blue_triangle"
+                    android:padding="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="浙江省 杭州市 西湖区"
+                    android:textSize="16sp" />
+
+                <View style="@style/Line" />
+
+                <EditText
+                    android:id="@+id/et_address_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入详细地址"
+                    android:padding="@dimen/dp5"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="联系人" />
+        </RelativeLayout>
+
+        <View style="@style/Line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/blue_radio_left"
+                android:drawablePadding="@dimen/dp2"
+                android:text="直系亲属(配偶)"
+                android:textColor="@color/text_blank"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_relative_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:background="@drawable/shape_et_stroke"
+                    android:hint="请输入真实姓名"
+                    android:padding="@dimen/dp3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_relative_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:background="@drawable/shape_et_stroke"
+                    android:drawableRight="@drawable/blue_triangle"
+                    android:focusable="false"
+                    android:hint="请从通讯录中选择"
+                    android:padding="@dimen/dp3"
+                    android:paddingRight="@dimen/dp5" />
+            </LinearLayout>
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="@dimen/dp5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:drawableLeft="@drawable/blue_radio_left"
+                android:drawablePadding="@dimen/dp2"
+                android:text="朋友"
+                android:textColor="@color/text_blank"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_friend_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:background="@drawable/shape_et_stroke"
+                    android:hint="请输入真实姓名"
+                    android:padding="@dimen/dp3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_friends_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:background="@drawable/shape_et_stroke"
+                    android:drawableRight="@drawable/blue_triangle"
+                    android:focusable="false"
+                    android:hint="请从通讯录中选择"
+                    android:padding="@dimen/dp3"
+                    android:paddingRight="@dimen/dp5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/Buttom_with"
+                android:layout_alignParentBottom="true"
+                android:text="@string/next" />
+
+            <View
+                style="@style/Line"
+                android:layout_above="@id/btn_next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

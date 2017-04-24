@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+
+    <View style="@style/Line" />
+
+    <RadioGroup
+        android:id="@+id/gr_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/RadioButtonStyle"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_home_tab"
+            android:textColor="@color/selector_color_home_table"
+            android:text="@string/home"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/decorationStage"
+            style="@style/RadioButtonStyle"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_home_tab"
+            android:text="@string/decorationStage"
+            android:textColor="@color/selector_color_home_table"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/stagingMall"
+            style="@style/RadioButtonStyle"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_home_tab"
+            android:text="@string/StagingMall"
+            android:textColor="@color/selector_color_home_table"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/mine"
+            style="@style/RadioButtonStyle"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_home_tab"
+            android:text="@string/mine"
+            android:textColor="@color/selector_color_home_table"
+            android:textSize="12sp" />
+    </RadioGroup>
+</LinearLayout>

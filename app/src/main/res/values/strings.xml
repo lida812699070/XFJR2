@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">消费金融</string>
+    <string name="action_settings">Setting</string>
+    <string name="img_desc">desc</string>
+    <string name="mobile_error">手机号码格式错误</string>
+    <string name="pwd_dig">0123456789qazwsxedcrfvtgbyhnujmiklopQAZWSXEDCRFVTGBYHNUJMIKLOP</string>
+    <!-- 手势密码 -->
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少绘制4个连续点"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制手势密码"</string>
+    <string name="lockpattern_need_to_cancel">"请绘制原图案取消"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"密码设置成功"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">为了您的账户安全，请绘制手势密码</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+    <!-- 手势管理界面 -->
+    <string name="gesture_manage">手势密码</string>
+    <string name="home">首页</string>
+    <string name="mine">我的</string>
+    <string name="StagingMall">邀请返佣</string>
+    <string name="decorationStage">立即用钱</string>
+    <string name="month_free">本月已还</string>
+    <string name="my_bill">我的账单</string>
+    <string name="my_document">我的订单</string>
+    <string name="payment_history">还款记录</string>
+    <string name="applications_record">申请记录</string>
+    <string name="help">帮助与反馈</string>
+    <string name="my_message">我的消息</string>
+    <string name="invite_friends">邀请好友</string>
+    <string name="share_friends">分享好友</string>
+    <string name="perfect_info">完 善 信 息</string>
+    <string name="_500">即送500元商城抵用券</string>
+    <string name="mobile_number">手机号</string>
+    <string name="login_password">登录密码</string>
+    <string name="please_in_mobile">请输入您的手机号</string>
+    <string name="put">确定</string>
+    <string name="reg_no_reg">此手机号未注册，请注册后将自动完成绑定</string>
+    <string name="input_mobile">请输入手机号</string>
+    <string name="input_message_check">请输入短信验证码</string>
+    <string name="input_invite_mobile">请输入邀请人手机号</string>
+    <string name="input_password">请输入您的密码</string>
+    <string name="password">密码</string>
+    <string name="check_code">验证码</string>
+    <string name="finish">完成</string>
+    <string name="next">下一步</string>
+    <string name="periods_times">还款期数</string>
+    <string name="time">时间</string>
+    <string name="repayment">已还款</string>
+    <string name="_01_12">01/12</string>
+    <string name="_450_00">450.00</string>
+    <string name="_03_04">03/04</string>
+    <string name="state">状态</string>
+    <string name="money">金额</string>
+    <string name="periods">期数</string>
+    <string name="delete">删除</string>
+    <string name="name">姓名</string>
+    <string name="please_in_name">请输入您的姓名</string>
+    <string name="save">保存</string>
+    <string name="close">关闭</string>
+    <string name="submit">提交</string>
+    <string name="get_base_limit"><u>恭喜您以获取基础额度</u></string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="ti_e_3_8">完整填写以上信息将为您提额<font color='#da4b4b'>3-8万元</font></string>
+    <string name="_5_15">完整填写以上信息将为您提额<font color='#da4b4b'>5-10万元</font></string>
+    <string name="_2_4">完整填写以上信息将为您提额<font color='#da4b4b'>2-4万元。</font></string>
+    <string name="_1_2">完整填写以上信息将为您提额<font color='#da4b4b'>1-2万元。</font></string>
+</resources>

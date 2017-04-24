@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tomcat360.com.hyxfjr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- android:targetSdkVersion="14" -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="tomcat360.com.hyxfjr.v.APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MainActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.SplashActivity"
+            android:theme="@style/Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.GuideActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.LoginActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561cae6ae0f55abd990035bf" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="rd27hpG9g2BIGYVbtu1jKksengqvGGUv" />
+
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ModifyGesturePasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyInfoActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.BindMobilActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.InputPasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.RegisterActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.DialogLoginCheck1Activity"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.DialogLoginCheck2Activity"
+            android:theme="@style/DialogTheme" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.LoanActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.DialogLoanRepaymentActivity"
+            android:theme="@style/DialogTheme" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.TestActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.Input6PasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.LoanSuccessActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.PaymentHistoryActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.RepaymentDetailActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyRedPacketActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.SettingActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.DialogSelectPic"
+            android:theme="@style/DialogTheme" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="tomcat360.com.hyxfjr.v.view_impl.activity"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.BankCardAddActivity">
+
+        </activity>
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ResetPasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ShipAddressManageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.NewAddressActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.BankCardManageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.CarMessageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.HouseMessageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.IdentityAuthenticationActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.FaceRecognitionActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.BaseMessageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.TraderPasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.OtherAssetActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.IdentityAuthenticationResultDialog"
+            android:theme="@style/DialogTheme" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.SocialSecurityActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyLimitActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.JobInfoActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.BillActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ShareActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ShareBottmDialog"
+            android:theme="@style/DialogTheme" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.HelpActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.CallPhoneActivity"
+            android:theme="@style/DialogTheme" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.SayMessageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.InviteFriendsActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyDataActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ContractNetworkActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ContractNetworkListActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyCutImageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ShowImageActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.ApplicationsRecordActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyMessageListActivity"
+            android:theme="@style/WhiteToolbarText" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MyMessageDetail" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.CurrentAccountActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.HistoryBillActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.MonthBillDetailActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.CurrentAccountListActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.PrepaymentActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.GesturePasswordSettingActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.UnlockGesturePasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.GuestActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.CreateGesturePasswordActivity" />
+        <activity android:name="tomcat360.com.hyxfjr.v.view_impl.activity.CancelGesturePasswordActivity" />
+        <activity
+            android:name="tomcat360.com.hyxfjr.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

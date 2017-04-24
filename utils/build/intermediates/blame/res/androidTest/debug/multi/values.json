@@ -1,0 +1,32 @@
+[
+    {
+        "outputFile": "E:\\Work\\DepotDev\\xfjr\\android\\XFJR\\utils\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "E:\\Work\\DepotDev\\xfjr\\android\\XFJR\\utils\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 101,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 225
+                },
+                "from": {
+                    "file": "E:\\Work\\DepotDev\\xfjr\\android\\XFJR\\utils\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml"
+                }
+            }
+        ]
+    }
+]

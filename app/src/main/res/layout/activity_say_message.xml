@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@drawable/hyxfjr_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp5"
+            android:text="行银消费金融聆听您的意见" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp100"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/shape_white_radio_bg"
+            android:enabled="true"
+            android:gravity="top"
+            android:hint="请输入您想询问的内容"
+            android:maxLines="10"
+            android:minLines="8"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="留言后我们会尽快回复您的信息,请保持手机畅通"
+        android:textColor="@color/et_hint_color" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Buttom_with"
+        android:text="@string/submit" />
+</LinearLayout>

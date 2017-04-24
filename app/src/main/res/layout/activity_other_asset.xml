@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="理财" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="开始日期" />
+
+                    <EditText
+                        android:id="@+id/et_financing_select_time"
+                        style="@style/et_16sp"
+                        android:drawableRight="@drawable/blue_triangle"
+                        android:focusable="false"
+                        android:hint="请选择开始日期" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="理财金额" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="(单位：万元)" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="理财期限" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="(单位：天)" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="存款" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="存款类型" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="定期存款" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="开始日期" />
+
+                    <EditText
+                        android:id="@+id/et_deposit_select_time"
+                        style="@style/et_16sp"
+                        android:drawableRight="@drawable/blue_triangle"
+                        android:focusable="false"
+                        android:hint="请选择开始日期" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="存款金额" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="(单位：万元)" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="存款期限" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="(单位：月)" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="寿险保单" />
+
+            <View style="@style/Line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="保单号" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="请输入保单号" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="投保公司" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="请输入投保的保险公司" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="投保期限" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="(单位：年)" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="投保金额" />
+
+                    <EditText
+                        style="@style/et_16sp"
+                        android:hint="(单位：万元)" />
+                </LinearLayout>
+
+                <View style="@style/Line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16sp"
+                        android:text="投保时间" />
+
+                    <EditText
+                        android:id="@+id/et_cover_date"
+                        style="@style/et_16sp"
+                        android:drawableRight="@drawable/blue_triangle"
+                        android:focusable="false"
+                        android:hint="请选择开始日期" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/Line"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/Buttom_with"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/save" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

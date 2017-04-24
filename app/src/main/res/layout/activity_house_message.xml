@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_20sp"
+            android:layout_margin="@dimen/dp5"
+            android:text="购买时间"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_house_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@drawable/blue_triangle"
+            android:hint="请选择购房时间"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:textColor="@color/et_text_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_20sp"
+            android:layout_margin="@dimen/dp5"
+            android:text="房产位置"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_house_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/blue_triangle"
+                android:padding="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:text="浙江省 杭州市 西湖区"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入详细地址"
+                android:padding="@dimen/dp5"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_20sp"
+            android:layout_margin="@dimen/dp5"
+            android:text="建筑面积"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_house_acreage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="单位：平方米"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingLeft="@dimen/dp5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_20sp"
+            android:layout_margin="@dimen/dp5"
+            android:text="房屋性质"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_house_nature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableRight="@drawable/blue_triangle"
+            android:hint="请选择房屋性质"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_20sp"
+            android:layout_margin="@dimen/dp5"
+            android:text="按揭情况"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_mortgage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp5">
+
+                <RadioButton
+                    android:id="@+id/rb_not_mortgage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:text="无按揭"
+                    android:textColor="@color/et_text_color"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_with_mortgage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="有按揭"
+                    android:textColor="@color/et_text_color"
+                    android:textSize="16sp" />
+
+
+            </RadioGroup>
+
+            <View style="@style/Line" />
+
+            <LinearLayout
+                android:id="@+id/ll_with_mortgage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_mortgage_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="有按揭的请输入月供金额"
+                    android:padding="@dimen/dp5"
+                    android:textSize="16sp" />
+
+                <View style="@style/Line" />
+
+                <EditText
+                    android:id="@+id/et_mortgage_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="有按揭的请输入剩余期限"
+                    android:padding="@dimen/dp5"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/Line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/_5_15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Buttom_with"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+
+        <View
+            style="@style/Line"
+            android:layout_above="@id/btn_save" />
+    </RelativeLayout>
+</LinearLayout>

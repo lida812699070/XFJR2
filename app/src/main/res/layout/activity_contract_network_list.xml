@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/toolbar_bg"
+        android:paddingTop="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:drawableLeft="@drawable/location_white"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableRight="@drawable/down"
+            android:text="杭州"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginTop="@dimen/dp5" />
+
+    <RelativeLayout
+        android:id="@+id/ll_center_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="杭州总部"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableRight="@drawable/right"
+            android:text="距您最近"
+            android:textColor="@color/guestPaint_color_wrong" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="杭州西湖区分布"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="杭州萧山区分布"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="杭州上城区分布"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="@dimen/dp5" />
+</LinearLayout>

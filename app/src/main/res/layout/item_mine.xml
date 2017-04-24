@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp22">
+
+    <ImageView
+        android:id="@+id/mine_item_left"
+        android:src="@drawable/umeng_socialize_share_music"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10" />
+
+    <TextView
+        android:id="@+id/mine_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_toEndOf="@+id/mine_item_left"
+        android:layout_toRightOf="@+id/mine_item_left"
+        android:text="我的账单"
+        android:textColor="@color/blank"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mine_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp5"
+        android:drawablePadding="@dimen/dp2"
+        android:drawableRight="@drawable/back"
+        android:text="本月已还"
+        android:textSize="12sp" />
+</RelativeLayout>
